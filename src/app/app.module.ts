@@ -51,8 +51,8 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'active', component: ActiveComponent },
   { path: 'registerdetails', component: RegisterDetailsComponent },
-  { path: 'forgotpassword',canActivate: [AuthGuard], component: ForgotPasswordComponent },
-  { path: 'forgotpass', canActivate: [AuthGuard],component: ForgotpassComponent },//get email address
+  { path: 'forgotpassword', component: ForgotPasswordComponent },
+  { path: 'forgotpass', component: ForgotpassComponent },//get email address
   { path: 'profile',canActivate: [AuthGuard], component: ProfileComponent },
   { path: 'sugestedprofile', component: SugestedProfileComponent },
   { path: 'offers', component: OffersComponent },

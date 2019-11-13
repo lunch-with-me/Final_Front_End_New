@@ -43,7 +43,7 @@
     border: none;
     // height: calc(100vh - 171px);
     // background: linear-gradient(to top right, #ffffff 0%, #92a8d1 100%);
-    background-color: 	#F8F8F8;
+    background-color:   #F8F8F8;
     height: 800px;
     overflow-y: scroll;
     @include transition("filter .2s ease-in 0s");
@@ -120,15 +120,15 @@
 @media only screen and (max-width: 767.99px) {
   .active-list-container {
     display: none;
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 0;
     z-index: 3;
     margin: 0;
     height: calc(100vh - 100px);
     width: 220px;
-    padding-top: 21px;
-    background-color: #ffffff;
+    // padding-top: 21px;
+    background: gray;
     @include box-shadow($x: 2px, $y: 0px);
 
     &.open {
@@ -158,6 +158,13 @@
   }
 }
 .chat-container{
-  background: linear-gradient(to top right, #ffffff 0%, #92a8d1 100%);
+   background: linear-gradient(to top right, #ffffff 0%, #92a8d1 100%);
   border-radius: 5px;
+}
+.col-sm-3{
+  height: 95%;
+}
+.image{
+  position: relative;
+  height: 800px;
 }

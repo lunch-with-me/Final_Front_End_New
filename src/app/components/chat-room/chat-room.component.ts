@@ -47,6 +47,7 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
     this.route.params.subscribe((params: Params) => {
       this.chatWith = params.chatWith;
     });
+    //debugger;
     
     this.route.queryParams.subscribe(val => {
       try {
@@ -136,7 +137,8 @@ export class ChatRoomComponent implements OnInit, OnDestroy {
             this.noMsg = true;
             this.messageList = [];
           }
-        } else {
+        } 
+        else {
           this.onNewConv("chat-room");
         }
       });

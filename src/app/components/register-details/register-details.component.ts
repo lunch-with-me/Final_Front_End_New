@@ -84,7 +84,7 @@ export class RegisterDetailsComponent implements OnInit {
 
     this.registerForm = this.formBuilder.group({
       fullname: ['', [ Validators.required, Validators.minLength(4), Validators.maxLength(20) ]],
-      self_description: ['', [ Validators.required , Validators.minLength(4) ]],
+      self_description: ['', [ Validators.required , Validators.minLength(60), Validators.maxLength(250) ]],
       gender: ['', [ Validators.required]],
       dob: ['']
       // image:['', [ Validators.required ]],

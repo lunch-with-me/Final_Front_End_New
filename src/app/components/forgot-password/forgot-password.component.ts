@@ -44,9 +44,17 @@ export class ForgotPasswordComponent implements OnInit {
                 console.log("reset password is succeeded");
                 console.log(data)
                 this.successMessage = data;
+                if (data.success == true) {
+                  this.flashMessagesService.show(data.msg, {cssClass: "alert-success", timeout: 1000});
+                  this.router.navigate(["/login"]);
+                }
+                else {
+                  this.flashMessagesService.show(data.msg, {cssClass: "alert-danger", timeout: 3000});
+                }
               
               },
               error => {console.log(error)}
+
             )
     
     }
